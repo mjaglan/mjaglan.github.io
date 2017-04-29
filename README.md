@@ -1,6 +1,6 @@
 ## Welcome to my GitHub Pages
 
-Whenever there's a commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages on this site, from the content in the Markdown files.
+Whenever there's a commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages on this site, from the content in Markdown files.
 
 ### Markdown
 
