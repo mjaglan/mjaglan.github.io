@@ -15,9 +15,9 @@ Base OS Provider | [Vagrant](https://www.vagrantup.com/)
 
 # Solution Evaluations:  
 
-![docker-dev-in-box-environment](images/dev-environment/docker-vagrant-host.png) 
+![docker-dev-in-box-environment](../images/dev-environment/docker-vagrant-host.png) 
 
-Image Source: [docker-dev-in-box-environment](http://itsmyviewofthings.blogspot.com/2014/06/docker-dev-in-box-environment-setup.html)
+_NOTE: Image Source [docker-dev-in-box-environment](http://itsmyviewofthings.blogspot.com/2014/06/docker-dev-in-box-environment-setup.html)_
 
 In this experiment, we write code for setting up the base infrastructure on local developer machine, a.k.a., Infrastructure as code (IaC). The project on which this experiment is done - [github.com/airavata-courses/spring17-API-Server](https://github.com/airavata-courses/spring17-API-Server) - a microservice. For building Infrastructure as code the additional files created are  "Dockerfile" for each microservice, and one "Vagrantfile" as provider automation script. For any project this is a one time effort. After that building production like environment on local machine is fast and easy. So it can save a lot time and effort compared to doing the same activity manually.
 
@@ -29,12 +29,17 @@ And you can run a docker-image as container like this -
 ```docker run -a stdin -a stdout -i -t myDockerImageName /bin/bash```
 
 
-![running-docker-directly](images/dev-environment/no-vagrant.png) 
+![running-docker-directly](../images/dev-environment/no-vagrant.png) 
+
+_NOTE: Image Source [running-docker-directly](http://blog.zenika.com/2014/10/07/setting-up-a-development-environment-using-docker-and-vagrant/)_
 
 By default, on Windows or Mac machine, these containers run on top of [boot2docker](https://github.com/boot2docker/boot2docker) docker-machine by docker installation. On linux, docker directly leverages the virtualization from the host machine kernel. The docker container (i.e., running images) consumes few MBs of memories as compared to running a VM which consumes memory in GBs. On Windows or Mac machine, in order to run docker-containers, on custom linux flavor, Vagrant VM automation tool is useful which is explained below.  
 
 ## Vagrant
-![running-vagrant-with-docker-provider](images/dev-environment/yes-vagrant.png) 
+![running-vagrant-with-docker-provider](../images/dev-environment/yes-vagrant.png) 
+
+_NOTE: Image Source [docker-provider-for-vagrant](http://blog.zenika.com/2014/10/07/setting-up-a-development-environment-using-docker-and-vagrant/)_
+
 
 
 # Conclusion
