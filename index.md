@@ -4,4 +4,8 @@ For quiet a while I am exploring tools and approaches for DevOps driving softwar
 
 ### List of topics discussed on my pages
 - [Setting up an automated local development environment using Docker and Vagrant](docs/dev-environment.md) 
+
 - [Integration of Docker and Vagrant tools with popular IDEs](docs/docker-and-vagrant-with-IDE.md)
+
+- [DevOps culture for Apache Airavata](docs/docker-and-vagrant-with-IDE.md)
+
