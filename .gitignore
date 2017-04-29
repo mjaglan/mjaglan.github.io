@@ -1,0 +1,5 @@
+# eclipse neon project
+.project
+
+# markdown editor
+.*.html
