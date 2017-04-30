@@ -36,9 +36,34 @@ _NOTE: Image Source [running-docker-directly](http://blog.zenika.com/2014/10/07/
 By default, on Windows or Mac machine, these containers run on top of [boot2docker](https://github.com/boot2docker/boot2docker) docker-machine by docker installation. On linux, docker directly leverages the virtualization from the host machine kernel. The docker container (i.e., running images) consumes few MBs of memories as compared to running a VM which consumes memory in GBs. On Windows or Mac machine, in order to run docker-containers, on custom linux flavor, Vagrant VM automation tool is useful which is explained below.  
 
 ## Vagrant
-![running-vagrant-with-docker-provider](../images/dev-environment/yes-vagrant.png) 
+
+Vagrant is just a Docker wrapper on systems that support Docker natively while it spins up a host VM to run containers on systems that don't support it. Users don't have to bother whether Docker is supported natively or not : the same configuration will work on every OS. Vagrant can orchestrate Docker containers: run multiple containers concurrently and link them together. Docker hosts are not limited to boot2docker (a Virtualbox image of Tiny Core Linux) but Debian, Ubuntu, CoreOS and other Linux distros are supported too. And can run can run on more stable VM managers than Virtualbox (e.g. VMWare).
+
+![running-vagrant-with-docker-provider](../images/dev-environment/yes-vagrant-1.png) 
 
 _NOTE: Image Source [docker-provider-for-vagrant](http://blog.zenika.com/2014/10/07/setting-up-a-development-environment-using-docker-and-vagrant/)_
+
+The basic usage of vagrant with docker as the provider, brings the same situation (see above). That is, on platforms that don't support containers, by default Vagrant spins up a Tiny Core Linux (boot2docker) Docker host. 
+
+If our production environment is running some other linux (say ubuntu 14.04 LTS) we have a gap between the configurations of development and production environments. In some cases, this can virtually be the cause of a production bug, impossible to identify in development environment. 
+
+![running-vagrant-with-docker-provider](../images/dev-environment/yes-vagrant-2.png) 
+
+_NOTE: Image Source [docker-provider-for-vagrant](http://blog.zenika.com/2014/10/07/setting-up-a-development-environment-using-docker-and-vagrant/)_
+
+So, one of Vagrant main conveniences is that it let us specify a custom Docker host and we are not stuck with boot2docker VM (see above). For this the main ```Vagrantfile``` references to another vagrantfile (say ```DockerHostVagrantfile```) like this - 
+
+```
+	...
+	# other "docker provider" specific configuration
+	...
+	
+	d.vagrant_vagrantfile = "./DockerHostVagrantfile"
+	
+``` 
+
+Where [DockerHostVagrantfile](https://github.com/airavata-courses/spring17-devops/blob/feature-iac-dev-env/infrastructure/api-server/terraform/dev-env/DockerHostVagrantfile) will override the docker-provider specific default configurations. And you replace boot2docker with production environment VM (say ubuntu 14.04 LTS).
+
 
 
 
