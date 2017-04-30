@@ -1,9 +1,11 @@
 # Integration of Docker and Vagrant tools with popular IDEs 
 
 # Problem Statement
-
+In continuation with [previous work](./dev-environment.md), explore capabilities of Docker and Vagrant in that how well it integrates with an IDE. It should allow developer to edit code, compile, deploy locally, test, and debug the system.
 
 # Possible Solutions
+For this experiment, popular IDEs like Eclipse and IntelliJ Idea are considered. For Docker integration with Eclipse there are following options - 
+
 
 
 # Solution Evaluations
