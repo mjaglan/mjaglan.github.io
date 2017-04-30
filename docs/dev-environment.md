@@ -74,7 +74,7 @@ Writing Dockerfile and Vagrantfile requires initial effort. But the over all gai
 
 
 # Associated Code(s) on GitHub
-[github.com/airavata-courses/spring17-devops/tree/feature-iac-dev-env/infrastructure/api-server/terraform/dev-env](https://github.com/airavata-courses/spring17-devops/tree/feature-iac-dev-env/infrastructure/api-server/terraform/dev-env)
+- [github.com/airavata-courses/spring17-devops/tree/feature-iac-dev-env/infrastructure/api-server/terraform/dev-env](https://github.com/airavata-courses/spring17-devops/tree/feature-iac-dev-env/infrastructure/api-server/terraform/dev-env)
 
 
 # References Used for Experiment(s)
