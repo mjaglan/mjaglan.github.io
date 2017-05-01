@@ -2,4 +2,4 @@
 .project
 
 # markdown editor
-.*.html
+.*.md.html
