@@ -4,10 +4,13 @@ For quiet a while I am exploring tools and approaches for DevOps driven software
 
 
 ### List of topics discussed
-- [Setting up an automated local development environment using Docker and Vagrant](docs/dev-environment.md) 
+
+<!---
+- [DevOps culture for Apache Airavata](docs/devops-culture-for-airavata.md)
+--->
 
 - [Integration of Docker and Vagrant tools with popular IDEs](docs/docker-and-vagrant-with-IDE.md)
 
-- [DevOps culture for Apache Airavata](docs/devops-culture-for-airavata.md)
+- [Setting up an automated local development environment using Docker and Vagrant](docs/dev-environment.md) 
 
 - [Distributed Caching for Apache Airavata's Laravel Portal](docs/distributed-caching.md)
