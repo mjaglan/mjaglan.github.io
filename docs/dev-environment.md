@@ -5,7 +5,7 @@ We need a way to build isolated and repeatable production like development envir
 
 
 # Possible Solutions
-Classic VMs ensure isolated and repeatable environments. But these are resource consuming. Developers need to code/build/test every few minutes and won't accept the virtualization overhead. So instead of make OS level containers (i.e., VMs), using application level containers is extremely fast and easier to maintainer. For this we use docker application containers and vagrant automation to provide the desired OS for docker container to run in isolation - 
+Classic VMs ensure isolated and repeatable environments. But these are resource consuming. Developers need to code/build/test every few minutes and won't accept the virtualization overhead. So instead of make OS level containers (i.e., VMs), using application level containers is extremely fast and easier to maintain. For this we use docker application containers and vagrant automation to provide the desired OS for docker container to run in isolation - 
 
 Feature | Options
 ------- | -------
@@ -67,6 +67,10 @@ Where [DockerHostVagrantfile](https://github.com/airavata-courses/spring17-devop
 
 # Conclusion
 Writing Dockerfile and Vagrantfile requires initial effort. But the over all gains are considerable for long term. Infrastructure as Code provides the fastest and most resource-effective way of building isolated and repeatable environments. Since containers are isolated instances that run your applications. These lightweight instances can be replaced, rebuilt, and moved around easily. This allows us to mirror the production and development environment and is a tremendous help in the continuous integration and delivery process.
+
+
+# Associated Discussion(s)
+- [Setting up an automated production like local development environment (part-1)](https://lists.apache.org/thread.html/a61dd950db92dacbed2e737579630309c65176a74ca27119451e9386@%3Cdev.airavata.apache.org%3E)
 
   
 # Associated Issue(s) on GitHub
