@@ -1,5 +1,6 @@
 # eclipse neon project
 .project
+.settings
 
 # markdown editor
 .*.md.html
