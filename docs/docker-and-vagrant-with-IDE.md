@@ -33,6 +33,10 @@ I also tried the standalone capabilities of Vagrant tool for cases where non-doc
 # Conclusion
 Vagrant can bring its own custom VM, on top of which it runs dockerized application (i.e., docker container). If custom VM is not specified inside vagrantfile, vagrant scripting engine fall-backs to boot2docker VM (a minimal linux OS provided by docker installation), on top of which it runs dockerized application. Using docker standalone on Windows/ MacOS requires installation of Docker-Machine which has boot2docker VM running, on top of which it runs dockerized application. So for dockerized applications, only advantage of using vagrant on local dev machine is to specify custom OS variant (windows, or linux versions) which matches the exact production server (not just the OS kernel). I think if there are linux servers installed in production, then it is optional to use vagrant tooling (which can run dockerized application on custom OS). Assuming production servers are linux OS, we prefer to eliminate vagrant tool and suggest using IDE with a docker plugin like [Docker-Integration](https://plugins.jetbrains.com/plugin/7724-docker-integration) or [Eclipse Docker Tooling](https://marketplace.eclipse.org/content/eclipse-docker-tooling).
 
+
+# Associated Discussion(s)
+- [Setting up an automated production like local development environment (part-2)](https://lists.apache.org/thread.html/52c10855b6b11d53fa2bca9003c39779d4522d4f7386954179ac41b4@%3Cdev.airavata.apache.org%3E)
+
 # Associated Issue(s) on GitHub
 - [IAC: Docker and Vagrant integration with IDE](https://github.com/airavata-courses/spring17-devops/issues/8)
 
