@@ -103,7 +103,7 @@ I studied existing implementations and discussions for both approaches. And it i
 
 [Event Driven Microservices Architecture & One database per Microservice]
 -	http://microservices.io/patterns/data/database-per-service.html
-o	
+
 -	https://plainoldobjects.com/2015/09/02/does-each-microservice-really-need-its-own-database-2/
 
 -	https://www.nginx.com/blog/event-driven-data-management-microservices/
