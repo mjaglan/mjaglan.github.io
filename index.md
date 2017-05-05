@@ -13,4 +13,6 @@ For quiet a while I am exploring tools and approaches for DevOps driven software
 
 - [Setting up an automated local development environment using Docker and Vagrant](docs/dev-environment.md) 
 
+- [Does each Microservices really need its own DB?](docs/does-each-Microservices-really-need-its-own-database.md)
+
 - [Distributed Caching for Apache Airavata's Laravel Portal](docs/distributed-caching.md)
