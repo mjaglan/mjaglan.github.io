@@ -27,6 +27,7 @@ For debugging deployed code base in Vagrant box following approaches are conside
 - [Vagrant SSH](https://www.vagrantup.com/intro/getting-started/up.html)
 - [Vagrant Synced folders](https://www.vagrantup.com/docs/synced-folders/)
 - Remote Debugging
+- Debugging output from Ansible and Vagrant (for Ansible Provisioning in Vagrant)
 
 For debugging deployed code base in Docker Container following approaches are considered -
 - Logging via the Application
@@ -90,7 +91,7 @@ _Image Source: [confluence.jetbrains.com/.../Configuring+a+Vagrant+VM+for+Debugg
 
 
 
-- ```debugging output from Ansible and Vagrant```: get additional debug information about locally running Ansible playbooks when provisioned via Vagrant like [this](https://serverfault.com/a/611070) - 
+- ```Debugging output from Ansible and Vagrant```: Get additional debug information about locally running Ansible playbooks when provisioned via Vagrant like [this](https://serverfault.com/a/611070) - 
 
 	```
 	config.vm.provision "ansible" do |ansible|
