@@ -23,12 +23,12 @@ Feature | Options
 Eclipse IDE | [Eclipse Docker Tooling](https://marketplace.eclipse.org/content/eclipse-docker-tooling)
 IntelliJ Idea IDE | [Jetbrains Docker Integration](https://plugins.jetbrains.com/plugin/7724-docker-integration)
 
-For debugging deployed code base in Vagrant box following approach is considered - 
+For debugging deployed code base in Vagrant box following approaches are considered - 
 - [Vagrant SSH](https://www.vagrantup.com/intro/getting-started/up.html)
 - [Vagrant Synced folders](https://www.vagrantup.com/docs/synced-folders/)
 - Remote Debugging
 
-For debugging deployed code base in Docker Container following approach is considered -
+For debugging deployed code base in Docker Container following approaches are considered -
 - Logging via the Application
 - Logging via Data Volumes 
 - Logging via the Docker Logging Driver 
