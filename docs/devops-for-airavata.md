@@ -147,12 +147,12 @@ In long term, if Airavata is to be built ground up using Docker containers, we r
 
 # References used for study
 [For Vagrant development in IDE]
-- Eclipse IDE | [Eclipse Vagrant Tooling](https://marketplace.eclipse.org/content/eclipse-vagrant-tooling)
-- IntelliJ Idea IDE | [Jetbrains Vagrant Plugin](https://plugins.jetbrains.com/plugin/7379-vagrant)
+- [Eclipse Vagrant Tooling](https://marketplace.eclipse.org/content/eclipse-vagrant-tooling) for Eclipse IDE
+- [Jetbrains Vagrant Plugin](https://plugins.jetbrains.com/plugin/7379-vagrant) for IntelliJ Idea IDE
 
 [For Docker Development in IDE]
-- Eclipse IDE | [Eclipse Docker Tooling](https://marketplace.eclipse.org/content/eclipse-docker-tooling)
-- IntelliJ Idea IDE | [Jetbrains Docker Integration](https://plugins.jetbrains.com/plugin/7724-docker-integration)
+- [Eclipse Docker Tooling](https://marketplace.eclipse.org/content/eclipse-docker-tooling) for Eclipse IDE
+- [Jetbrains Docker Integration](https://plugins.jetbrains.com/plugin/7724-docker-integration) for IntelliJ Idea IDE
 
 
 [For debugging deployed code base in Vagrant box]
