@@ -5,9 +5,8 @@ For quiet a while I am exploring tools and approaches for DevOps driven software
 
 ### List of topics discussed
 
-<!---
-- [DevOps culture for Apache Airavata](docs/devops-culture-for-airavata.md)
---->
+
+- [DevOps for Apache Airavata](docs/devops-for-airavata.md)
 
 - [Integration of Docker and Vagrant tools with popular IDEs](docs/docker-and-vagrant-with-IDE.md)
 
