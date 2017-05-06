@@ -11,23 +11,42 @@ For these three approaches, new tools like Vagrant and Docker are heavily used. 
 # Possible Solutions
 For Vagrant development in IDE following tool is considered -
 
+Feature | Options
+------- | -------
+Eclipse IDE | [Eclipse Vagrant Tooling](https://marketplace.eclipse.org/content/eclipse-vagrant-tooling)
+IntelliJ Idea IDE | [Vagrant-Plugin](https://plugins.jetbrains.com/plugin/7379-vagrant)
+
 For Docker Development in IDE following tool is considered -
+
+Feature | Options
+------- | -------
+Eclipse IDE | [Eclipse Docker Tooling](https://marketplace.eclipse.org/content/eclipse-docker-tooling)
+IntelliJ Idea IDE | [Docker-Integration](https://plugins.jetbrains.com/plugin/7724-docker-integration)
 
 For debugging deployed code base in Vagrant box following approach is considered - 
 
+- [Vagrant Synced folders](https://www.vagrantup.com/docs/synced-folders/) for centralized application logs on Host Machine
+- [Vagrant SSH](https://www.vagrantup.com/intro/getting-started/up.html) to inspect application process in Guest Machine
+
 For debugging deployed code base in Docker Container following approach is considered -
+- Logging via the Application
+- Logging via Data Volumes 
+- Logging via the Docker Logging Driver 
+- Logging via a Dedicated Logging Container
+- Sidecar Approach
+
 
 
 # Solution Evaluations
 
 ### For Vagrant development in IDE
 
+
 ### For Docker Development in IDE
 
 ### For debugging deployed code base in Vagrant box
 
 ### For debugging deployed code base in Docker Container
-
 
 # Conclusion
 
