@@ -128,9 +128,9 @@ In short term, we recommend ```Ansible Playbooks on top of Vagrant Box```, and f
 In long term, if Airavata is to be built ground up using Docker containers, we recommend ```Dockerizing Airavata Microservices```, and for this Docker IDE plugin and one of five different ways of debugging options are available depending on how production architecture of logging mechanism is setup. This is a good solution, with larger long term benefits in terms of saving resource consumption and time, but this will need some initial time investment in order to dockerize/ containerize all Airavata microservices.
 
 # Associated Discussion(s)
-- [[Debugging applications with Docker Containers] Setting up an automated production like local development environment (part-4)](https://lists.apache.org/)
+- [[Debugging applications with Docker Containers] Setting up an automated production like local development environment (part-4)](https://lists.apache.org/thread.html/019eb4d41c3a17bb32fc5dd47f946050f16c0211d95b2fa62fdfc4e6@%3Cdev.airavata.apache.org%3E)
 
-- [[Debugging applications with Vagrant Boxes] Setting up an automated production like local development environment (part-3)](https://lists.apache.org/)
+- [[Debugging applications with Vagrant Boxes] Setting up an automated production like local development environment (part-3)](https://lists.apache.org/thread.html/55959e55590ae22e30970909c24b45fd569d59a709e48a21eb13d12b@%3Cdev.airavata.apache.org%3E)
 
 - [[IDE Integration] Setting up an automated production like local development environment (part-2)](https://lists.apache.org/thread.html/52c10855b6b11d53fa2bca9003c39779d4522d4f7386954179ac41b4@%3Cdev.airavata.apache.org%3E)
 
