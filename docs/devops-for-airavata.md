@@ -24,9 +24,9 @@ Eclipse IDE | [Eclipse Docker Tooling](https://marketplace.eclipse.org/content/e
 IntelliJ Idea IDE | [Jetbrains Docker Integration](https://plugins.jetbrains.com/plugin/7724-docker-integration)
 
 For debugging deployed code base in Vagrant box following approach is considered - 
-
-- [Vagrant Synced folders](https://www.vagrantup.com/docs/synced-folders/) for centralized application logs on Host Machine
-- [Vagrant SSH](https://www.vagrantup.com/intro/getting-started/up.html) to inspect application process in Guest Machine
+- [Vagrant SSH](https://www.vagrantup.com/intro/getting-started/up.html)
+- [Vagrant Synced folders](https://www.vagrantup.com/docs/synced-folders/)
+- Remote Debugging
 
 For debugging deployed code base in Docker Container following approach is considered -
 - Logging via the Application
@@ -41,13 +41,13 @@ For debugging deployed code base in Docker Container following approach is consi
 
 ### For Vagrant development in IDE
 
-###### Eclipse Plugin - Eclipse Vagrant Tooling
+##### Eclipse Plugin - Eclipse Vagrant Tooling
 ![Eclipse Vagrant Tooling](./../images/airavata-devops/EVT.png)
 
 _Source Image: [marketplace.eclipse.org/.../eclipse-vagrant-tooling](https://marketplace.eclipse.org/content/eclipse-vagrant-tooling#group-screenshots)_
 
 
-###### IntelliJ Idea Plugin - Jetbrains Vagrant Plugin
+##### IntelliJ Idea Plugin - Jetbrains Vagrant Plugin
 
 ![Eclipse Vagrant Tooling](./../images/airavata-devops/JVP.png)
 
@@ -56,13 +56,13 @@ _Source Image: [plugins.jetbrains.com/plugin/7379-vagrant](https://plugins.jetbr
 
 ### For Docker Development in IDE
 
-###### Eclipse Plugin - Eclipse Docker Tooling
+##### Eclipse Plugin - Eclipse Docker Tooling
 ![Eclipse Vagrant Tooling](./../images/airavata-devops/EDT.png)
 
 _Source Image: [marketplace.eclipse.org/.../eclipse-docker-tooling](https://marketplace.eclipse.org/content/eclipse-docker-tooling#group-screenshots)_
 
 
-###### IntelliJ Idea Plugin - Jetbrains Docker Integration
+##### IntelliJ Idea Plugin - Jetbrains Docker Integration
 
 ![Eclipse Vagrant Tooling](./../images/airavata-devops/JDIP.png)
 
@@ -70,11 +70,7 @@ _Source Image: [plugins.jetbrains.com/plugin/7724-docker-integration](https://pl
 
 ### For debugging deployed code base in Vagrant box
 
-- ```Remote Debugging```: Attach your IDE's debugger to a running process which is inside the vagrant box. For this port-forwarding configuration should be enabled. A typical configuration would look like this -
-
-![Remote debug configuration in an IDE](./../images/airavata-devops/remote-debug.png)
-
-_Image Source: [confluence.jetbrains.com/.../Configuring+a+Vagrant+VM+for+Debugging](https://confluence.jetbrains.com/display/PhpStorm/Configuring+a+Vagrant+VM+for+Debugging)_
+- ```Vagrant SSH```: Login to vagrant box in order to inspect processes manually.
 
 - ```Vagrant Synced folders```: Set up shared folders in vagrantfile like this 
 
@@ -86,7 +82,12 @@ _Image Source: [confluence.jetbrains.com/.../Configuring+a+Vagrant+VM+for+Debugg
 
 	This shared folder is a centralized persistent space on disk available for read from the host machine.
 	
-- ```Vagrant SSH```: Login to vagrant box in order to inspect processes manually.
+- ```Remote Debugging```: Attach your IDE's debugger to a running process which is inside the vagrant box. For this port-forwarding configuration should be enabled. A typical configuration would look like this -
+
+![Remote debug configuration in an IDE](./../images/airavata-devops/remote-debug.png)
+
+_Image Source: [confluence.jetbrains.com/.../Configuring+a+Vagrant+VM+for+Debugging](https://confluence.jetbrains.com/display/PhpStorm/Configuring+a+Vagrant+VM+for+Debugging)_
+
 
 
 - ```debugging output from Ansible and Vagrant```: get additional debug information about locally running Ansible playbooks when provisioned via Vagrant like [this](https://serverfault.com/a/611070) - 
