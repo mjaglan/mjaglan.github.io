@@ -140,9 +140,11 @@ In long term, if Airavata is to be built ground up using Docker containers, we r
 
 
 # Associated Code(s) on GitHub
-- [github.com/.../Vagrantfile]() by [Anuj](https://github.com/anujbhan)
+For evaluating the Vagrant and Docker tool integration with IDE and Debugging locally deployed Airavata code base, I am considering already in-progress features by fellow classmates of [Spring17-Airavata-Courses](http://courses.airavata.org/index.html#course-overview) - 
 
-- [github.com/.../airavata-ansible/.../local_airavata_deploy.yml]() by [Anuj](https://github.com/anujbhan)
+- [github.com/.../airavata/.../dev-tools/local-dev-provisioning/Vagrantfile](https://github.com/anujbhan/airavata/tree/local-provisioning/dev-tools/local-dev-provisioning) by [Anuj](https://github.com/anujbhan)
+
+- [github.com/.../airavata/.../dev-tools/local-dev-provisioning/airavata-local-testing.yml](https://github.com/anujbhan/airavata/blob/local-provisioning/dev-tools/local-dev-provisioning/) by [Anuj](https://github.com/anujbhan)
 
 - [github.com/.../airavata-docker/.../Dockerfiles](https://github.com/ajinkya-dhamnaskar/airavata/tree/airavata-docker/dev-tools/docker) by [Ajinkya](https://github.com/ajinkya-dhamnaskar)
 
